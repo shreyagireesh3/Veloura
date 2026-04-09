@@ -1,0 +1,7 @@
+{
+  "name": "Remix: VELOURA – Invisible UX Problem Detector",
+  "description": "Detects hidden user frustration and confusion in e-commerce interfaces using behavioral signals and AI insights.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

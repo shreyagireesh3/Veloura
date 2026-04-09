@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-script: "Dancing Script", cursive;
+  
+  --color-veloura-pink: #fdf2f8;
+  --color-veloura-rose: #fbcfe8;
+  --color-veloura-lavender: #f3e8ff;
+  --color-veloura-mint: #ecfdf5;
+  --color-veloura-accent: #db2777;
+  --color-veloura-ink: #1e1b4b;
+}
+
+@layer base {
+  body {
+    @apply bg-veloura-pink text-veloura-ink font-sans antialiased;
+  }
+}
+
+.glass {
+  @apply bg-white/40 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+.glass-dark {
+  @apply bg-veloura-ink/10 backdrop-blur-md border border-white/10 shadow-lg;
+}
+
+.pastel-gradient {
+  background: linear-gradient(135deg, #fdf2f8 0%, #f3e8ff 50%, #ecfdf5 100%);
+}
+
+/* A-Frame styles */
+.a-canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
